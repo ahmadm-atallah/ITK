@@ -68,7 +68,7 @@ public:
 
 const unsigned int ImageDimension = 2;
 const unsigned int testIterations = 2;
-const unsigned int numOfIterations = 600;
+const unsigned int numOfIterations = 2000;
 
 itk::TimeProbe gpuTime, cpuTime;
 
@@ -122,8 +122,8 @@ int itkGPUDemonsRegistrationFilterTest(int argc, char *argv[])
     std::cout << "Finished CPU Demons" << std::endl;
 
     }
-  std::cout << "Total GPU time in seconds = " << gpuTime.GetMeanTime() << std::endl;
-  std::cout << "Total CPU time in seconds = " << cpuTime.GetMeanTime() << std::endl;
+  std::cout << "Average GPU registration time in seconds = " << gpuTime.GetMeanTime() << std::endl;
+  std::cout << "Average CPU registration time in seconds = " << cpuTime.GetMeanTime() << std::endl;
   InternalPixelType maxDiff = 0, avgDiff = 0, diff, tmp;
 
   InternalPixelType *gpuBuf, *cpuBuf;

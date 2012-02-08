@@ -107,7 +107,7 @@ public:
   DeformationFieldPointer;
 
   /** FiniteDifferenceFunction type. */
-  typedef typename Superclass::FiniteDifferenceFunctionType
+  typedef typename GPUSuperclass::FiniteDifferenceFunctionType
   FiniteDifferenceFunctionType;
 
   /** GPUDemonsRegistrationFilterFunction type. */

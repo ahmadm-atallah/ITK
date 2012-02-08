@@ -107,7 +107,7 @@ private:
 } // end namespace itk
 
 #ifndef ITK_MANUAL_INSTANTIATION
-#include "itkGPUReduction.txx"
+#include "itkGPUReduction.hxx"
 #endif
 
 #endif
